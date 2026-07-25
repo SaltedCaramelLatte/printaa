@@ -68,16 +68,16 @@ export function CTASection({ data }: CTASectionProps) {
             {/* Simple stats - no cards */}
             <div className="flex flex-wrap justify-center gap-12 pt-12 border-t border-white/20">
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-white mb-2">200+</p>
-                <p className="text-white/80">Anggota Aktif</p>
+                <p className="text-4xl md:text-5xl font-bold text-white mb-2">45+</p>
+                <p className="text-white/80">Pelanggan Offline per Hari</p>
               </div>
               <div className="text-center">
                 <p className="text-4xl md:text-5xl font-bold text-white mb-2">50+</p>
-                <p className="text-white/80">Event per Tahun</p>
+                <p className="text-white/80">Pesanan Online per Hari</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-white mb-2">8</p>
-                <p className="text-white/80">Divisi Aktif</p>
+                <p className="text-4xl md:text-5xl font-bold text-white mb-2">6</p>
+                <p className="text-white/80">Layanan Tersedia</p>
               </div>
             </div>
           </motion.div>

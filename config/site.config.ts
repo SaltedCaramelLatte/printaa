@@ -32,5 +32,5 @@ export const SITE_CONFIG = {
   instagram: '@yourorganization',
 
   /** Physical address of the organization */
-  address: 'Jl. H.M. Yasin Limpo No. 36, Romangpolong, Gowa, Sulawesi Selatan',
+  address: 'Jalan rajawali Asr Lompobattang No.12A Blok A, Panambungan, Kec. Mariso, Kota Makassar, Sulawesi Selatan 90124',
 } as const;

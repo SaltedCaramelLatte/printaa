@@ -154,8 +154,8 @@ export const HOME_CONTENT = {
     ],
   },
   cta: {
-    title: 'Bergabung Bersama Kami',
-    description: 'Mari berkontribusi untuk kemajuan farmasi Indonesia',
+    title: 'Kontak Kami',
+    description: 'Melayani kebutuhan cetak untuk pelajar, mahasiswa, dan umum. Hubungi kami untuk informasi lebih lanjut atau konsultasi layanan.',
     primaryCTA: {
       text: 'Hubungi Kami',
       link: '/contact',

@@ -70,7 +70,7 @@ export function AboutContent({ data }: AboutContentProps) {
                                     transition={{ delay: 0.3 }}
                                     className="text-4xl font-bold text-gray-900 leading-tight"
                                 >
-                                    Perjalanan Menuju Dedikasi
+                                    Perjalanan Kami dalam Membangun Usaha
                                 </motion.h2>
                             </div>
                         </div>

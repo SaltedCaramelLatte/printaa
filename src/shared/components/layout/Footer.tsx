@@ -60,7 +60,8 @@ export function Footer() {
           >
             <h2 className="text-3xl font-black tracking-tight mb-6">{SITE_CONFIG.name}</h2>
             <p className="text-gray-400 leading-relaxed mb-8 text-lg font-light">
-              Kami adalah wadah pengembangan mahasiswa farmasi yang berkomitmen mencetak profesional berintegritas dan berwawasan luas.
+              Dari tugas kuliah hingga kebutuhan bisnis, Print AA siap membantu dengan layanan cetak berkualitas, pengerjaan cepat, dan pelayanan yang bersahabat.
+            Ikuti kami di media sosial untuk informasi layanan, promo, dan update terbaru.
             </p>
 
             <div className="flex gap-6">
