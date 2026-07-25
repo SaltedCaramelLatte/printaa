@@ -106,12 +106,12 @@ export interface AboutSettings {
  */
 export const HOME_CONTENT = {
   hero: {
-    badge: 'Organisasi Mahasiswa',
-    title: 'Himpunan Mahasiswa Jurusan',
-    titleHighlight: 'Farmasi',
+    badge: 'Jasa Makassar',
+    title: 'Printing & Fotokopi',
+    titleHighlight: 'AA',
     subtitle: 'UIN Alauddin Makassar',
     description:
-      'Wadah aspirasi, kreativitas, dan pengembangan diri mahasiswa Farmasi UIN Alauddin Makassar',
+      'Murah, Cepat, Profesional, dan Terpercaya. Layanan percetakan dan fotokopi terbaik untuk kebutuhan akademik dan profesional Anda.',
     primaryCTA: {
       text: 'Kenali Kami',
       link: '/about',
@@ -123,33 +123,33 @@ export const HOME_CONTENT = {
     backgroundImage: '/images/hero-bg.jpg',
     stats: [
       { value: '150+', label: 'Anggota Aktif' },
-      { value: '20+', label: 'Event / Tahun' },
-      { value: '8', label: 'Divisi' },
+      { value: '785k+', label: 'Pesanan Offline' },
+      { value: '234+', label: 'Pesanan Online' },
     ],
   },
   features: {
-    title: 'Program Kami',
-    description: 'Berbagai program pengembangan untuk mahasiswa Farmasi yang profesional dan berintegritas',
+    title: 'Layanan Kami',
+    description: 'Solusi print, fotokopi, scan, dan kebutuhan cetak lainnya dengan hasil berkualitas dan harga bersahabat.',
     items: [
       {
-        title: 'Keilmuan',
-        description: 'Program pengembangan kompetensi akademik dan riset farmasi',
-        icon: 'GraduationCap',
+        title: 'Print',
+        description: 'Cetak dokumen hitam putih maupun warna dengan hasil tajam',
+        icon: 'Printer',
       },
       {
-        title: 'Keprofesian',
-        description: 'Pelatihan dan sertifikasi untuk persiapan dunia kerja',
-        icon: 'Leaf',
+        title: 'Fotokopi',
+        description: 'Fotokopi cepat, rapi, dan berkualitas untuk berbagai kebutuhan',
+        icon: 'Copy',
       },
       {
-        title: 'Kaderisasi',
-        description: 'Pembinaan karakter dan leadership mahasiswa',
-        icon: 'Users',
+        title: 'Scan Dokumen',
+        description: 'Scan dokumen dengan hasil jernih dalam format PDF maupun gambar',
+        icon: 'FileText',
       },
       {
-        title: 'Pengabdian',
-        description: 'Kontribusi nyata untuk masyarakat dan lingkungan',
-        icon: 'Heart',
+        title: 'Jilid',
+        description: 'Layanan finishing agar dokumen lebih rapi, awet, dan profesional.',
+        icon: 'BookOpen',
       },
     ],
   },
@@ -162,7 +162,7 @@ export const HOME_CONTENT = {
     },
     secondaryCTA: {
       text: 'WhatsApp',
-      phone: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '628123456789',
+      phone: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '6285343971885',
     },
   },
 } as const;

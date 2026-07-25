@@ -5,16 +5,21 @@
 
 'use client';
 
-import { Leaf, Users, GraduationCap, Heart, LucideIcon } from 'lucide-react';
+import { BookOpen, Leaf, Users, GraduationCap, Heart, FileText, Copy, Zap, Wallet, Printer, LucideIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Section } from '@/shared/components/ui/Section';
 import { HomeSettings } from '@/config';
 
 const iconMap: Record<string, LucideIcon> = {
+  BookOpen,
   Leaf,
   Users,
   GraduationCap,
   Heart,
+  FileText,
+  Copy, Zap,
+  Wallet,
+  Printer
 };
 
 interface FeaturesSectionProps {

@@ -2,7 +2,7 @@
 
 import { Timeline } from '@/features/about/components/Timeline';
 import { Section } from '@/shared/components/ui/Section';
-import { Leaf, Target, Heart, Award, BookOpen, Users, HeartHandshake, Briefcase, LucideIcon } from 'lucide-react';
+import { Leaf, Target, Heart, Award, BookOpen, Users, HeartHandshake, Briefcase, FileText, Copy, Zap, Wallet, Printer, LucideIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { AboutSettings } from '@/config';
 
@@ -10,7 +10,13 @@ const iconMap: Record<string, LucideIcon> = {
     BookOpen,
     Users,
     HeartHandshake,
-    Briefcase
+    Briefcase,
+    FileText,
+    Copy,
+    Zap,
+    Wallet,
+    Printer,
+    Leaf
 };
 
 interface AboutContentProps {

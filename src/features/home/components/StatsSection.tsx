@@ -22,17 +22,17 @@ const stats: Stat[] = [
   {
     id: '1',
     icon: Users,
-    value: 200,
+    value: 594,
     suffix: '+',
-    label: 'Anggota Aktif',
+    label: 'Total Pelanggan',
     color: 'from-blue-500 to-blue-600',
   },
   {
     id: '2',
     icon: Award,
-    value: 50,
+    value: 500,
     suffix: '+',
-    label: 'Event per Tahun',
+    label: 'Ulasan Positif',
     color: 'from-green-500 to-green-600',
   },
   {
@@ -46,9 +46,9 @@ const stats: Stat[] = [
   {
     id: '4',
     icon: Leaf,
-    value: 10,
+    value: 4,
     suffix: ' Tahun',
-    label: 'Pengalaman Berorganisasi',
+    label: 'Pengalaman Beroperasi',
     color: 'from-primary-500 to-primary-600',
   },
 ];
@@ -110,7 +110,7 @@ export function StatsSection() {
           className="text-center mb-24"
         >
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Our Community in <span className="text-primary-400">Numbers</span>
+            Mengapa Memilih Print <span className="text-primary-400">AA</span> ?
           </h2>
         </motion.div>
 
@@ -153,7 +153,7 @@ export function StatsSection() {
             className="text-center"
           >
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Organisasi mahasiswa farmasi yang aktif mengembangkan akademik, soft skills, dan pengabdian masyarakat
+              Dipercaya oleh pelanggan dari berbagai kalangan, kami berkomitmen untuk memberikan layanan terbaik dan hasil berkualitas tinggi.
             </p>
           </motion.div>
         </div>
