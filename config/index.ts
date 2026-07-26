@@ -122,7 +122,7 @@ export const HOME_CONTENT = {
     },
     backgroundImage: '/images/hero-bg.jpg',
     stats: [
-      { value: '150+', label: 'Anggota Aktif' },
+      { value: '3', label: 'Anggota Aktif' },
       { value: '785k+', label: 'Pesanan Offline' },
       { value: '234+', label: 'Pesanan Online' },
     ],
@@ -172,42 +172,42 @@ export const HOME_CONTENT = {
  * Static content for the about page sections
  */
 export const ABOUT_CONTENT = {
-  story: 'Your Organization is a modern platform designed to bring communities together. We provide tools for content management, event organization, and member engagement. Founded with the vision of empowering communities through technology, we continue to innovate and serve our members with excellence.',
+  story: 'Berawal dari sebuah langkah sederhana, Print AA tumbuh menjadi penyedia layanan print dan fotokopi yang dipercaya banyak pelanggan. Kami terus berinovasi untuk memberikan hasil terbaik dengan proses yang cepat dan pelayanan yang ramah.',
   mission: [
-    'Empower communities through modern technology and collaboration',
-    'Foster growth and development of our members',
-    'Build strong networks and partnerships',
-    'Deliver meaningful value to the community',
+    'Memberikan layanan print dan fotokopi yang cepat serta berkualitas. ', 
+    'Mengutamakan kepuasan pelanggan melalui pelayanan yang ramah. ',
+    'Menyediakan harga yang terjangkau tanpa mengurangi kualitas. ',
+    'Terus berinovasi mengikuti perkembangan teknologi percetakan',
   ],
   vision:
-    'To be a leading platform for community engagement and digital collaboration',
+    'Menjadi mitra terpercaya untuk kebutuhan print, fotokopi, dan layanan dokumen lainnya',
   values: [
     {
-      title: 'Integrity',
-      description: 'Upholding honesty and professional ethics in everything we do',
+      title: 'Integritas',
+      description: 'Menjunjung tinggi kejujuran, tanggung jawab, dan profesionalisme dalam setiap layanan.',
       icon: 'BookOpen',
     },
     {
-      title: 'Collaboration',
-      description: 'Working together to achieve shared goals',
+      title: 'Kolaborasi',
+      description: 'Bekerja sama untuk mencapai tujuan bersama',
       icon: 'Users',
     },
     {
-      title: 'Innovation',
-      description: 'Continuously innovating in all our programs and activities',
+      title: 'Inovasi',
+      description: 'Terus berinovasi dalam semua program dan aktivitas kami',
       icon: 'HeartHandshake',
     },
     {
-      title: 'Dedication',
-      description: 'Fully committed to organizational growth and excellence',
+      title: 'Dedikasi',
+      description: 'Sepenuhnya berkomitmen pada pertumbuhan organisasi dan keunggulan',
       icon: 'Briefcase',
     },
   ],
   statistics: {
-    activeMembers: '150+',
+    activeMembers: '3+',
     eventsPerYear: '20+',
     divisions: '8',
-    yearsActive: '2015',
+    yearsActive: '2022',
   },
   timeline: [
     {

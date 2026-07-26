@@ -38,7 +38,7 @@ export function AboutContent({ data }: AboutContentProps) {
                         Tentang Kami
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
-                        Learn more about our organization and our journey in building a strong, engaged community.
+                        Temukan layanan berkualitas yang kami hadirkan untuk memenuhi berbagai kebutuhan Anda.
                     </p>
                 </motion.div>
             </Section>

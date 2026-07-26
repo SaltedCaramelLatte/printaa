@@ -589,7 +589,7 @@ INSERT INTO public.site_settings (key, content) VALUES
 }'::jsonb),
 
 ('about', '{
-  "story": "Your Organization is a modern platform designed to bring communities together. We provide tools for content management, event organization, and member engagement. Founded with the vision of empowering communities through technology, we continue to innovate and serve our members with excellence.",
+  "story": "Berawal dari sebuah langkah sederhana, Print AA tumbuh menjadi penyedia layanan print dan fotokopi yang dipercaya banyak pelanggan. Kami terus berinovasi untuk memberikan hasil terbaik dengan proses yang cepat dan pelayanan yang ramah.",
   "mission": [
     "Empower communities through modern technology and collaboration",
     "Foster growth and development of our members",
