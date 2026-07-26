@@ -9,7 +9,7 @@ import { EVENT_STATUS_COLORS, EVENT_STATUS_LABELS } from '@/lib/constants/event'
 const EventStatusSchema = z.enum(['upcoming', 'ongoing', 'completed', 'cancelled']);
 
 export const metadata: Metadata = {
-  title: 'Events - Your Organization',
+  title: 'Events - Print & Fotocopy AA',
   description: 'Daftar event dan kegiatan dari Himpunan Mahasiswa Jurusan Farmasi UIN Alauddin Makassar',
 };
 

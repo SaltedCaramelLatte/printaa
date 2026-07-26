@@ -410,7 +410,7 @@ export default function SettingsPage() {
                 onChange={(markdown) =>
                   setAboutSettings({ ...aboutSettings, story: markdown })
                 }
-                placeholder="Tell your organization's story..."
+                placeholder="Tell your story..."
                 height="300px"
               />
             </div>

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${event.title} - Your Organization`,
+    title: `${event.title} - Print & Fotocopy AA`,
     description: event.description,
   };
 }

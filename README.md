@@ -305,12 +305,12 @@ Dokumentasi lengkap tersedia di folder `docs/`:
 Edit `config/site.config.ts`:
 ```typescript
 export const SITE_CONFIG = {
-  name: 'Your Organization',
-  fullName: 'Your Organization Full Name',
+  name: 'Print AA',
+  fullName: 'Print 7 Fotocopy AA',
   email: 'contact@yoursite.com',
-  whatsappNumber: '628123456789',
+  whatsappNumber: '6285343971885',
   instagram: '@yourorg',
-  address: 'Your Address',
+  address: 'Jalan rajawali Asr Lompobattang No.12A Blok A, Panambungan, Kec. Mariso, Kota Makassar, Sumatera Selatan 90124',
 };
 ```
 

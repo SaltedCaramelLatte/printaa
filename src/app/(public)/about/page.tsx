@@ -9,7 +9,7 @@ import { getAboutSettings } from '@/lib/api/settings';
 
 export const metadata: Metadata = {
   title: 'Tentang Kami',
-  description: 'About Your Organization - Learn more about our mission and vision',
+  description: 'Print & Fotocopy AA - Learn more about our mission and vision',
 };
 
 export default async function AboutPage() {
