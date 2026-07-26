@@ -211,41 +211,46 @@ export const ABOUT_CONTENT = {
   },
   timeline: [
     {
-      year: '2020',
-      title: 'Organization Founded',
-      description: 'Officially established to serve our community',
-    },
-    {
-      year: '2021',
-      title: 'Program Expansion',
-      description: 'Launched structured programs and initiatives',
-    },
-    {
       year: '2022',
-      title: 'Digital Transformation',
-      description: 'Embraced digital tools for better community engagement',
+      title: 'Awal Perjalanan',
+      description: 'Memulai usaha dengan hanya 1 perangkat dan semangat memberikan layanan terbaik',
+    },
+    {
+      year: '2023',
+      title: 'Pertumbuhan & Ekspansi',
+      description: 'Menerima lebih banyak pesanan dan memperluas layanan ke berbagai segmen pelanggan',
     },
     {
       year: '2024',
-      title: 'Continuous Innovation',
-      description: 'Developing innovative programs and cross-institutional collaboration',
+      title: 'Pengembangan Layanan',
+      description: 'Meningkatkan kualitas layanan dan memperkenalkan inovasi baru untuk memenuhi kebutuhan pelanggan',
     },
+    {
+      year: '2025',
+      title: 'Kepercayaan Pelanggan',
+      description: 'Mendapatkan kepercayaan dari pelanggan setia dan menjadi pilihan utama untuk layanan print dan fotokopi di wilayah kami',
+    },
+    {
+      year: '2026',
+      title: 'Terus Berkembang',
+      description: 'Berkomitmen untuk terus berkembang, berinovasi, dan memberikan layanan terbaik bagi pelanggan kami',
+    }
   ],
   affiliations: [
     {
-      name: 'Industry Association',
-      type: 'National',
-      description: 'National-level industry organization',
+      name: 'akasaproject.id',
+      type: 'Furniture & Interior',
+      description: 'Mitra terpercaya untuk kebutuhan furniture dan interior berkualitas',
     },
     {
-      name: 'Professional Network',
-      type: 'Professional',
-      description: 'Professional networking organization',
+      name: 'ctngr.idn',
+      type: 'Clothing & Apparel',
+      description: 'Mitra terpercaya untuk kebutuhan pakaian dan apparel berkualitas',
     },
     {
-      name: 'Partner Institution',
-      type: 'Institution',
-      description: 'Partner educational or business institution',
+      name: 'Ilham Ducting',
+      type: 'airflow & ducting',
+      description: 'Mitra terpercaya untuk kebutuhan airflow dan ducting berkualitas',
     },
   ],
   certifications: [
