@@ -22,9 +22,9 @@ const stats: Stat[] = [
   {
     id: '1',
     icon: Users,
-    value: 594,
+    value: 194,
     suffix: '+',
-    label: 'Total Pelanggan',
+    label: ' Pelanggan Harian',
     color: 'from-blue-500 to-blue-600',
   },
   {
@@ -32,7 +32,7 @@ const stats: Stat[] = [
     icon: Award,
     value: 500,
     suffix: '+',
-    label: 'Ulasan Positif',
+    label: 'Total Ulasan Positif',
     color: 'from-green-500 to-green-600',
   },
   {

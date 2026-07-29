@@ -199,7 +199,7 @@ export const ABOUT_CONTENT = {
     },
     {
       title: 'Dedikasi',
-      description: 'Sepenuhnya berkomitmen pada pertumbuhan organisasi dan keunggulan',
+      description: 'Sepenuhnya berkomitmen pada pertumbuhan dan keunggulan',
       icon: 'Briefcase',
     },
   ],
