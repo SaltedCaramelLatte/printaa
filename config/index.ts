@@ -123,8 +123,8 @@ export const HOME_CONTENT = {
     backgroundImage: '/images/hero-bg.jpg',
     stats: [
       { value: '3', label: 'Anggota Aktif' },
-      { value: '785k+', label: 'Pesanan Offline' },
-      { value: '234+', label: 'Pesanan Online' },
+      { value: '78k+', label: 'Pesanan Offline' },
+      { value: '23k+', label: 'Pesanan Online' },
     ],
   },
   features: {

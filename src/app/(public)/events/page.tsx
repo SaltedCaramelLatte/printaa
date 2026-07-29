@@ -42,7 +42,7 @@ export default async function EventsPage({
             Event
           </h1>
           <p className="text-2xl text-gray-300 max-w-3xl leading-relaxed">
-            Latest activities and events from Your Organization
+            Latest activities and events from Us
           </p>
         </div>
       </section>
