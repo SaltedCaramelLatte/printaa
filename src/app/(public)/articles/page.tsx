@@ -12,8 +12,8 @@ const ArticleCategorySchema = z.enum(['post', 'blog', 'opinion', 'publication', 
 const ITEMS_PER_PAGE = 12;
 
 export const metadata: Metadata = {
-  title: 'Articles - Print & Fotocopy AA',
-  description: 'Collection of articles, blog posts, opinions, publications, and latest information from Print & Fotocopy AA',
+  title: 'Artikel - Print & Fotocopy AA',
+  description: 'Collection of articles, blog posts, opinions, publications, and latest information',
 };
 
 export default async function ArticlesPage({

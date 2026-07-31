@@ -248,7 +248,7 @@ export const ABOUT_CONTENT = {
       description: 'Mitra terpercaya untuk kebutuhan pakaian dan apparel berkualitas',
     },
     {
-      name: 'Ilham Ducting',
+      name: 'Ilham Airflow & Ducting',
       type: 'airflow & ducting',
       description: 'Mitra terpercaya untuk kebutuhan airflow dan ducting berkualitas',
     },
