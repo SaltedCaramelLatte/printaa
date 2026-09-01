@@ -106,10 +106,10 @@ export interface AboutSettings {
  */
 export const HOME_CONTENT = {
   hero: {
-    badge: 'Jasa Makassar',
+    badge: 'UMKM PILIHAN',
     title: 'Printing & Fotokopi',
     titleHighlight: 'AA',
-    subtitle: 'UIN Alauddin Makassar',
+    subtitle: 'print & fotocopy AA',
     description:
       'Murah, Cepat, Profesional, dan Terpercaya. Layanan percetakan dan fotokopi terbaik untuk kebutuhan akademik dan profesional Anda.',
     primaryCTA: {

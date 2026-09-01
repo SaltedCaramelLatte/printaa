@@ -75,7 +75,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <div className="flex items-center justify-between p-6 border-b border-gray-100">
               <div>
                 <h2 className="font-bold text-lg text-gray-900">{SITE_CONFIG.name}</h2>
-                <p className="text-xs text-gray-500 mt-0.5">UIN Alauddin Makassar</p>
+                <p className="text-xs text-gray-500 mt-0.5">Print & Fotocopy AA</p>
               </div>
               <button
                 onClick={onClose}
@@ -125,9 +125,9 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             {/* Footer Info */}
             <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-100 bg-gray-50">
               <p className="text-xs text-gray-500 text-center leading-relaxed">
-                Himpunan Mahasiswa Jurusan Farmasi
+                Print & Fotocopy AA
                 <br />
-                UIN Alauddin Makassar
+                Print AA
               </p>
             </div>
           </motion.div>

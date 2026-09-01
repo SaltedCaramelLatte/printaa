@@ -24,7 +24,7 @@ const stats: Stat[] = [
     icon: Users,
     value: 194,
     suffix: '+',
-    label: ' Pelanggan Harian',
+    label: 'Pelanggan Harian',
     color: 'from-blue-500 to-blue-600',
   },
   {

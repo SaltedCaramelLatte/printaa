@@ -138,7 +138,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
           <p>&copy; {currentYear} {SITE_CONFIG.name}.</p>
-          <p className="mt-2 md:mt-0">AA Grup</p>
+          <p className="mt-2 md:mt-0">KoMal Grup</p>
         </div>
       </div>
     </footer>

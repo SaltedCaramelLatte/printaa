@@ -10,7 +10,7 @@ const EventStatusSchema = z.enum(['upcoming', 'ongoing', 'completed', 'cancelled
 
 export const metadata: Metadata = {
   title: 'Events - Print & Fotocopy AA',
-  description: 'Daftar event dan kegiatan dari Himpunan Mahasiswa Jurusan Farmasi UIN Alauddin Makassar',
+  description: 'Daftar event dan kegiatan dari Print & Fotocopy AA.',
 };
 
 export default async function EventsPage({
