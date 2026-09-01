@@ -203,6 +203,7 @@ export function AboutContent({ data }: AboutContentProps) {
             {/* Certifications - Simple Grid */}
             <Section className="py-24">
                 <div className="container-custom max-w-5xl">
+                     <h2 className="text-3xl font-bold mb-16 text-center">Merek Yang Kami Gunakan</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {data.certifications?.map((cert) => (
                             <div key={cert.name} className="flex items-center gap-6 p-6 rounded-3xl hover:bg-gray-50 transition-colors duration-300">
