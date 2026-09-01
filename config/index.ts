@@ -252,15 +252,20 @@ export const ABOUT_CONTENT = {
       type: 'airflow & ducting',
       description: 'Mitra terpercaya untuk kebutuhan airflow dan ducting berkualitas',
     },
+        {
+      name: 'Komal Drink',
+      type: 'Beverage & Drink',
+      description: 'Mitra terpercaya untuk kebutuhan minuman dan beverage berkualitas',
+    },
   ],
   certifications: [
     {
-      name: 'Quality Certification',
-      year: '2023',
+      name: 'Empty Certification',
+      year: 'Empty Year',
     },
     {
-      name: 'ISO 9001:2015',
-      year: '2022',
+      name: 'Empty Certification',
+      year: 'Empty Year',
     },
   ],
 } as const;
