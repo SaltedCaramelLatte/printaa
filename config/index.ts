@@ -261,27 +261,27 @@ export const ABOUT_CONTENT = {
   certifications: [
     {
       name: 'HP',
-      year: '4 Years',
+      year: 'ke 4',
     },
     {
       name: 'Sidu',
-      year: '4 Years',
+      year: 'ke 4',
     },
         {
       name: 'Joyko',
-      year: '4 Years',
+      year: 'ke 4',
     },
         {
       name: 'Kenko',
-      year: '4 Years',
+      year: 'ke 4',
     },
             {
       name: 'Etona',
-      year: '4 Years',
+      year: 'Ke 4',
     },
             {
       name: 'Data Flex',
-      year: '4 Years',
+      year: 'Ke 4',
     },
   ],
 } as const;
