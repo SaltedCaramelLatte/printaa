@@ -237,6 +237,11 @@ export const ABOUT_CONTENT = {
     }
   ],
   affiliations: [
+            {
+      name: 'Komal Drink',
+      type: 'Beverage & Drink',
+      description: 'Mitra terpercaya untuk kebutuhan minuman dengan rasa yang berkualitas',
+    },
     {
       name: 'akasaproject.id',
       type: 'Furniture & Interior',
@@ -252,11 +257,7 @@ export const ABOUT_CONTENT = {
       type: 'airflow & ducting',
       description: 'Mitra terpercaya untuk kebutuhan airflow dan ducting berkualitas',
     },
-        {
-      name: 'Komal Drink',
-      type: 'Beverage & Drink',
-      description: 'Mitra terpercaya untuk kebutuhan minuman dan beverage berkualitas',
-    },
+
   ],
   certifications: [
     {
