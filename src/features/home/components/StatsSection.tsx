@@ -46,7 +46,7 @@ const stats: Stat[] = [
   {
     id: '4',
     icon: Leaf,
-    value: 4,
+    value: 5,
     suffix: ' Tahun',
     label: 'Pengalaman Beroperasi',
     color: 'from-primary-500 to-primary-600',
