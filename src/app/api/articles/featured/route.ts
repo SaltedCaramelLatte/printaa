@@ -7,8 +7,12 @@ export const dynamic = 'force-dynamic';
 export async function GET() {
   try {
     // Create a fresh client for this request to bypass any shared instance caching
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    if (!supabaseUrl || !supabaseAnonKey) {
+      throw new Error('Supabase environment variables are missing');
+    }
 
     const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
       auth: { persistSession: false },
@@ -17,6 +21,10 @@ export async function GET() {
       },
     });
 
+    type ArticleRow = Database['public']['Tables']['articles']['Row'] & {
+      author?: { name?: string; email?: string };
+    };
+
     const { data: articles, error } = await supabase
       .from('articles')
       .select('*')
@@ -24,7 +32,7 @@ export async function GET() {
       .eq('status', 'published')
       .order('published_at', { ascending: false })
       .limit(3)
-      .returns<any[]>();
+      .returns<ArticleRow[]>();
 
     if (error) {
       throw error;

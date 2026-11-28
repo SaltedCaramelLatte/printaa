@@ -5,14 +5,13 @@
 
 'use client';
 
-import { BookOpen, Leaf, Users, GraduationCap, Heart, FileText, Copy, Zap, Wallet, Printer, LucideIcon } from 'lucide-react';
+import { BookOpen, Users, GraduationCap, Heart, FileText, Copy, Zap, Wallet, Printer, LucideIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Section } from '@/shared/components/ui/Section';
 import { HomeSettings } from '@/config';
 
 const iconMap: Record<string, LucideIcon> = {
   BookOpen,
-  Leaf,
   Users,
   GraduationCap,
   Heart,
@@ -39,10 +38,10 @@ export function FeaturesSection({ data }: FeaturesSectionProps) {
               viewport={{ once: true }}
               className="max-w-xl"
             >
-              <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-8 leading-[0.9] tracking-tighter">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-8 leading-[1.1] tracking-tight">
                 {data.title}
               </h2>
-              <p className="text-xl text-gray-500 leading-relaxed border-l-2 border-primary-500 pl-6">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed border-l-2 border-primary-500 pl-6 font-normal">
                 {data.description}
               </p>
             </motion.div>
@@ -51,7 +50,7 @@ export function FeaturesSection({ data }: FeaturesSectionProps) {
           {/* Features List - Minimalist & Clean */}
           <div className="space-y-12">
             {data.items.map((feature, index) => {
-              const Icon = iconMap[feature.icon] || Leaf;
+              const Icon = iconMap[feature.icon] || Printer;
 
               return (
                 <motion.div
@@ -69,10 +68,10 @@ export function FeaturesSection({ data }: FeaturesSectionProps) {
                     </div>
 
                     <div className="border-b border-gray-100 pb-12 w-full group-last:border-0">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors">
+                      <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 group-hover:text-primary-700 transition-colors">
                         {feature.title}
                       </h3>
-                      <p className="text-lg text-gray-500 leading-relaxed font-light">
+                      <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-normal">
                         {feature.description}
                       </p>
                     </div>

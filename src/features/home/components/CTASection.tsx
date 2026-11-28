@@ -36,11 +36,11 @@ export function CTASection({ data }: CTASectionProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
+            <h2 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white mb-8 leading-tight tracking-tight">
               {data.title}
             </h2>
 
-            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-12 max-w-2xl mx-auto leading-relaxed font-normal">
               {data.description}
             </p>
 
@@ -68,16 +68,16 @@ export function CTASection({ data }: CTASectionProps) {
             {/* Simple stats - no cards */}
             <div className="flex flex-wrap justify-center gap-12 pt-12 border-t border-white/20">
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-white mb-2">45+</p>
-                <p className="text-white/80">Pelanggan Offline per Hari</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">45+</p>
+                <p className="text-sm sm:text-base text-white/90 font-medium">Pelanggan Offline per Hari</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-white mb-2">50+</p>
-                <p className="text-white/80">Pesanan Online per Hari</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">50+</p>
+                <p className="text-sm sm:text-base text-white/90 font-medium">Pesanan Online per Hari</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-bold text-white mb-2">6</p>
-                <p className="text-white/80">Layanan Tersedia</p>
+                <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">6</p>
+                <p className="text-sm sm:text-base text-white/90 font-medium">Layanan Tersedia</p>
               </div>
             </div>
           </motion.div>

@@ -62,13 +62,13 @@ export function HeroSection({ data }: HeroSectionProps) {
             {/* Badge - Minimalist pill */}
             <motion.div variants={item} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 border border-gray-100 w-fit mb-8">
               <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
-              <span className="text-sm font-medium text-gray-600 tracking-wide uppercase">{data.badge}</span>
+              <span className="text-xs font-semibold text-gray-700 tracking-wider uppercase">{data.badge}</span>
             </motion.div>
 
             {/* Headline - Massive & Tight - LCP Element Optimized */}
             <motion.h1
               variants={item}
-              className="text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-[1.1] md:leading-[1] tracking-tighter mb-8"
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 leading-[1.08] md:leading-[1] tracking-tight mb-8"
               style={{ contentVisibility: 'auto', minHeight: '200px' }}
             >
               {data.title}
@@ -79,7 +79,7 @@ export function HeroSection({ data }: HeroSectionProps) {
             </motion.h1>
 
             {/* Description - Reader friendly */}
-            <motion.p variants={item} className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl border-l-4 border-gray-100 pl-6 mb-10">
+            <motion.p variants={item} className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl border-l-4 border-gray-100 pl-6 mb-10 font-normal">
               {data.description}
             </motion.p>
 
@@ -87,14 +87,14 @@ export function HeroSection({ data }: HeroSectionProps) {
             <motion.div variants={item} className="flex flex-col sm:flex-row gap-4">
               <Link
                 href={data.primaryCTA.link}
-                className="px-8 py-4 bg-gray-900 text-white rounded-full font-bold text-lg hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-gray-900 text-white rounded-full font-bold text-base sm:text-lg hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
               >
                 {data.primaryCTA.text}
                 <Activity className="w-5 h-5" />
               </Link>
               <Link
                 href={data.secondaryCTA.link}
-                className="px-8 py-4 bg-white text-gray-900 border border-gray-200 rounded-full font-bold text-lg hover:bg-gray-50 transition-all hover:border-gray-300 flex items-center justify-center"
+                className="px-8 py-4 bg-white text-gray-900 border border-gray-200 rounded-full font-semibold text-base sm:text-lg hover:bg-gray-50 transition-all hover:border-gray-300 flex items-center justify-center"
               >
                 {data.secondaryCTA.text}
               </Link>
@@ -104,14 +104,14 @@ export function HeroSection({ data }: HeroSectionProps) {
             <motion.div variants={item} className="flex items-center gap-12 mt-16 pt-8 border-t border-gray-100">
               {data.stats.map((stat, index) => (
                 <div key={index}>
-                  <p className="text-3xl font-black text-gray-900">
+                  <p className="text-3xl sm:text-4xl font-bold text-gray-900">
                     <CountingNumber
                       value={parseInt(stat.value.replace(/\D/g, ''))}
                       suffix={stat.value.replace(/[0-9]/g, '')}
                       duration={2.5}
                     />
                   </p>
-                  <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">{stat.label}</p>
+                  <p className="text-xs sm:text-sm text-gray-500 font-medium uppercase tracking-wider">{stat.label}</p>
                 </div>
               ))}
             </motion.div>

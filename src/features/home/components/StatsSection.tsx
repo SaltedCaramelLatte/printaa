@@ -6,7 +6,7 @@
 'use client';
 
 import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
-import { Users, Leaf, Award, TrendingUp } from 'lucide-react';
+import { Users, Award, Clock, Layers } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 interface Stat {
@@ -37,15 +37,15 @@ const stats: Stat[] = [
   },
   {
     id: '3',
-    icon: TrendingUp,
+    icon: Layers,
     value: 8,
-    suffix: '',
-    label: 'Divisi Aktif',
+    suffix: '+',
+    label: 'Pilihan Layanan',
     color: 'from-amber-500 to-amber-600',
   },
   {
     id: '4',
-    icon: Leaf,
+    icon: Clock,
     value: 5,
     suffix: ' Tahun',
     label: 'Pengalaman Beroperasi',
@@ -109,7 +109,7 @@ export function StatsSection() {
           viewport={{ once: true }}
           className="text-center mb-24"
         >
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
             Mengapa Memilih Print <span className="text-primary-400">AA</span> ?
           </h2>
         </motion.div>
@@ -136,7 +136,7 @@ export function StatsSection() {
                 </div>
 
                 {/* Label */}
-                <p className="text-gray-400 font-medium text-sm md:text-base">
+                <p className="text-gray-300 font-medium text-sm md:text-base">
                   {stat.label}
                 </p>
               </motion.div>

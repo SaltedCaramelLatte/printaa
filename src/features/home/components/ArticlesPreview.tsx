@@ -42,10 +42,10 @@ export function ArticlesPreview() {
         {/* Header - Bold & Asymmetric */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end mb-16">
           <div>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight tracking-tight">
               Artikel <span className="text-primary-600">Terbaru</span>
             </h2>
-            <p className="text-xl text-gray-600">Latest articles and insights</p>
+            <p className="text-lg sm:text-xl text-gray-600 font-normal">Latest articles and insights</p>
           </div>
           <div className="flex justify-start lg:justify-end">
             <Link
@@ -93,13 +93,13 @@ export function ArticlesPreview() {
                       <Calendar className="w-4 h-4" />
                       <time>{format(new Date(article.publishedAt), 'd MMM yyyy', { locale: id })}</time>
                     </div>
-                    <h3 className={`font-bold text-white mb-3 line-clamp-2 ${isFeatured ? 'text-2xl md:text-3xl' : 'text-xl md:text-2xl'}`}>
+                    <h3 className={`font-semibold text-white mb-3 line-clamp-2 ${isFeatured ? 'text-2xl md:text-3xl' : 'text-xl md:text-2xl'}`}>
                       {article.title}
                     </h3>
                     {isFeatured && (
-                      <p className="text-white/90 line-clamp-2 mb-4">{article.excerpt}</p>
+                      <p className="text-white/90 line-clamp-2 mb-4 font-normal text-sm sm:text-base">{article.excerpt}</p>
                     )}
-                    <div className="flex items-center gap-2 text-white font-medium group-hover:gap-3 transition-all">
+                    <div className="flex items-center gap-2 text-white text-sm font-medium group-hover:gap-3 transition-all">
                       Baca Selengkapnya
                       <ArrowRight className="w-4 h-4" />
                     </div>

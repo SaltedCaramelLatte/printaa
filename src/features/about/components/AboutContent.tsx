@@ -34,10 +34,10 @@ export function AboutContent({ data }: AboutContentProps) {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-4xl mx-auto"
                 >
-                    <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                    <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
                         Tentang Kami
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
+                    <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-normal">
                         Temukan layanan berkualitas yang kami hadirkan untuk memenuhi berbagai kebutuhan Anda.
                     </p>
                 </motion.div>
@@ -62,13 +62,13 @@ export function AboutContent({ data }: AboutContentProps) {
                                     className="flex items-center gap-3 mb-4 text-primary-600"
                                 >
                                     <BookOpen className="w-6 h-6" />
-                                    <span className="font-bold tracking-wider uppercase text-sm">Cerita Kami</span>
+                                    <span className="font-semibold tracking-wider uppercase text-xs">Cerita Kami</span>
                                 </motion.div>
                                 <motion.h2
                                     initial={{ x: -20, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.3 }}
-                                    className="text-4xl font-bold text-gray-900 leading-tight"
+                                    className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight"
                                 >
                                     Perjalanan Kami dalam Membangun Usaha
                                 </motion.h2>
@@ -80,7 +80,7 @@ export function AboutContent({ data }: AboutContentProps) {
                             transition={{ delay: 0.4 }}
                             className="w-full md:w-2/3"
                         >
-                            <p className="text-gray-700 leading-relaxed text-lg md:text-xl text-balance">
+                            <p className="text-gray-700 leading-relaxed text-base sm:text-lg text-balance font-normal">
                                 {data.story}
                             </p>
                         </motion.div>
@@ -95,9 +95,9 @@ export function AboutContent({ data }: AboutContentProps) {
                         <div className="space-y-6">
                             <div className="flex items-center gap-3 text-primary-400">
                                 <Target className="w-8 h-8" />
-                                <h3 className="text-2xl font-bold">Misi Kami</h3>
+                                <h3 className="text-xl sm:text-2xl font-semibold">Misi Kami</h3>
                             </div>
-                            <p className="text-gray-300 text-lg leading-relaxed border-l-2 border-primary-600 pl-6">
+                            <p className="text-gray-300 text-base sm:text-lg leading-relaxed border-l-2 border-primary-600 pl-6 font-normal">
                                 {data.mission}
                             </p>
                         </div>
@@ -105,9 +105,9 @@ export function AboutContent({ data }: AboutContentProps) {
                         <div className="space-y-6">
                             <div className="flex items-center gap-3 text-secondary-400">
                                 <Heart className="w-8 h-8" />
-                                <h3 className="text-2xl font-bold">Visi Kami</h3>
+                                <h3 className="text-xl sm:text-2xl font-semibold">Visi Kami</h3>
                             </div>
-                            <p className="text-gray-300 text-lg leading-relaxed border-l-2 border-secondary-600 pl-6">
+                            <p className="text-gray-300 text-base sm:text-lg leading-relaxed border-l-2 border-secondary-600 pl-6 font-normal">
                                 {data.vision}
                             </p>
                         </div>
@@ -119,7 +119,7 @@ export function AboutContent({ data }: AboutContentProps) {
             <Section className="py-24">
                 <div className="container-custom">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nilai-Nilai Kami</h2>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Nilai-Nilai Kami</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 mx-auto rounded-full" />
                     </div>
 
@@ -131,10 +131,10 @@ export function AboutContent({ data }: AboutContentProps) {
                                     <div className="w-16 h-16 bg-primary-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:bg-primary-100 transition-all duration-300">
                                         <Icon className="w-8 h-8 text-primary-600" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+                                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
                                         {value.title}
                                     </h3>
-                                    <p className="text-gray-600 leading-relaxed">
+                                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-normal">
                                         {value.description}
                                     </p>
                                 </div>
@@ -151,10 +151,10 @@ export function AboutContent({ data }: AboutContentProps) {
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                             {Object.entries(data.statistics).map(([key, value]) => (
                                 <div key={key} className="text-center">
-                                    <div className="text-4xl md:text-6xl font-black text-gray-900 mb-2 tracking-tighter">
+                                    <div className="text-4xl md:text-6xl font-bold text-gray-900 mb-2 tracking-tight">
                                         {value}
                                     </div>
-                                    <div className="text-sm font-bold text-primary-600 uppercase tracking-widest">
+                                    <div className="text-xs font-semibold text-primary-700 uppercase tracking-wider">
                                         {key === 'activeMembers' && 'Anggota Aktif'}
                                         {key === 'eventsPerYear' && 'Event / Tahun'}
                                         {key === 'divisions' && 'Divisi'}
@@ -170,7 +170,7 @@ export function AboutContent({ data }: AboutContentProps) {
             {/* Timeline */}
             <Section className="py-24">
                 <div className="container-custom">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-16 text-center">
+                    <h2 className="text-3xl font-extrabold text-gray-900 mb-16 text-center">
                         Perjalanan Kami
                     </h2>
                     <Timeline items={data.timeline} />
@@ -180,7 +180,7 @@ export function AboutContent({ data }: AboutContentProps) {
             {/* Affiliations - Clean List */}
             <Section className="py-24 bg-gray-900 text-white">
                 <div className="container-custom">
-                    <h2 className="text-3xl font-bold mb-16 text-center">Kemitraan & Afiliasi</h2>
+                    <h2 className="text-3xl font-extrabold mb-16 text-center">Kemitraan & Afiliasi</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
                         {data.affiliations?.map((affiliation) => (
                             <div key={affiliation.name} className="border-t pt-8 border-gray-800 hover:border-primary-500 transition-colors duration-300">
@@ -189,9 +189,9 @@ export function AboutContent({ data }: AboutContentProps) {
                                         <Award className="w-6 h-6 text-primary-400" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-white mb-1">{affiliation.name}</h3>
-                                        <p className="text-xs font-bold text-primary-400 mb-3 uppercase tracking-wider">{affiliation.type}</p>
-                                        <p className="text-gray-400 text-sm">{affiliation.description}</p>
+                                        <h3 className="text-lg font-semibold text-white mb-1">{affiliation.name}</h3>
+                                        <p className="text-xs font-semibold text-primary-400 mb-3 uppercase tracking-wider">{affiliation.type}</p>
+                                        <p className="text-gray-400 text-sm font-normal">{affiliation.description}</p>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +203,7 @@ export function AboutContent({ data }: AboutContentProps) {
             {/* Certifications - Simple Grid */}
             <Section className="py-24">
                 <div className="container-custom max-w-5xl">
-                     <h2 className="text-3xl font-bold mb-16 text-center">Merek Yang Kami Gunakan</h2>
+                     <h2 className="text-3xl font-extrabold mb-16 text-center">Merek Yang Kami Gunakan</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {data.certifications?.map((cert) => (
                             <div key={cert.name} className="flex items-center gap-6 p-6 rounded-3xl hover:bg-gray-50 transition-colors duration-300">
@@ -211,8 +211,8 @@ export function AboutContent({ data }: AboutContentProps) {
                                     <Award className="w-10 h-10 text-primary-600" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-gray-900 mb-1">{cert.name}</h3>
-                                    <p className="text-primary-600 font-medium">Tahun {cert.year}</p>
+                                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{cert.name}</h3>
+                                    <p className="text-primary-600 font-medium text-sm">Tahun {cert.year}</p>
                                 </div>
                             </div>
                         ))}

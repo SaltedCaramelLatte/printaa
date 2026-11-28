@@ -14,6 +14,13 @@
 export { SITE_CONFIG } from './site.config';
 export { ARTICLE_CATEGORIES, EVENT_CATEGORIES, DIVISIONS, GALLERY_CATEGORIES } from './domain.config';
 export { ROUTES, ADMIN_ROUTES, AUTH_ROUTES, type RouteValue } from './navigation.config';
+export {
+  PRICING_CONFIG,
+  formatRupiah,
+  formatPriceWithUnit,
+  type PricingItem,
+  type PhotoPricingItem,
+} from './pricing.config';
 
 // =============================================================================
 // CONTENT CONFIGURATION (Static Homepage & About Page)

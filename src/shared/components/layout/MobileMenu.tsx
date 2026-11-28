@@ -12,7 +12,7 @@ import { SITE_CONFIG } from '@/config/site.config';
 import { cn } from '@/shared/utils/cn';
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Home, Info, FileText, Calendar, Users, UserCircle, X } from 'lucide-react';
+import { Home, Printer, Calculator, Info, FileText, X } from 'lucide-react';
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -21,11 +21,10 @@ interface MobileMenuProps {
 
 const navItems = [
   { label: 'Beranda', href: ROUTES.home, icon: Home },
-  { label: 'Tentang', href: ROUTES.about, icon: Info },
+  { label: 'Layanan & Harga', href: ROUTES.services, icon: Printer },
+  { label: 'Kalkulator Cetak', href: ROUTES.calculator, icon: Calculator },
+  { label: 'Tentang Kami', href: ROUTES.about, icon: Info },
   { label: 'Artikel', href: ROUTES.articles, icon: FileText },
-  { label: 'Event', href: ROUTES.events, icon: Calendar },
-  { label: 'Kepengurusan', href: ROUTES.leadership, icon: Users },
-  { label: 'Anggota', href: ROUTES.members, icon: UserCircle },
 ];
 
 export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
@@ -74,8 +73,8 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-gray-100">
               <div>
-                <h2 className="font-bold text-lg text-gray-900">{SITE_CONFIG.name}</h2>
-                <p className="text-xs text-gray-500 mt-0.5">Print & Fotocopy AA</p>
+                <h2 className="font-extrabold text-lg text-gray-900 tracking-tight">{SITE_CONFIG.name}</h2>
+                <p className="text-xs font-medium text-gray-500 mt-0.5">Print & Fotocopy AA</p>
               </div>
               <button
                 onClick={onClose}

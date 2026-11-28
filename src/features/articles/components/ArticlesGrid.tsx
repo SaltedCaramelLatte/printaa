@@ -119,7 +119,7 @@ export function ArticlesGrid({ articles }: ArticlesGridProps) {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 + 0.4 }}
-                    className={`font-bold text-white mb-3 line-clamp-2 ${isFeatured
+                    className={`font-semibold text-white mb-3 line-clamp-2 ${isFeatured
                         ? 'text-3xl md:text-4xl'
                         : isLarge
                           ? 'text-2xl md:text-3xl'
@@ -135,7 +135,7 @@ export function ArticlesGrid({ articles }: ArticlesGridProps) {
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: index * 0.1 + 0.5 }}
-                      className="text-white/90 line-clamp-2 mb-4 text-base md:text-lg"
+                      className="text-white/90 line-clamp-2 mb-4 text-sm sm:text-base font-normal"
                     >
                       {article.excerpt}
                     </motion.p>

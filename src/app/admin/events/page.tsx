@@ -119,12 +119,15 @@ export default function EventsPage() {
         title: 'Title',
         sortable: true,
         responsivePriority: 1,
-        render: (_: unknown, __: string, row: any) => (
-          <div>
-            <div className="font-medium text-gray-900">{row.title}</div>
-            <div className="text-sm text-gray-500">{row.slug}</div>
-          </div>
-        ),
+        render: (_: unknown, __: string, row: Record<string, unknown>) => {
+          const item = row as unknown as EventListItem;
+          return (
+            <div>
+              <div className="font-medium text-gray-900">{item.title}</div>
+              <div className="text-sm text-gray-500">{item.slug}</div>
+            </div>
+          );
+        },
       },
       {
         data: 'organizer.name',
@@ -159,38 +162,41 @@ export default function EventsPage() {
         title: 'Actions',
         sortable: false,
         className: 'text-right',
-        render: (id: unknown, _: string, row: any) => (
-          <div className="flex items-center justify-end gap-2">
-            <Link
-              href={`/events/${row.slug}`}
-              target="_blank"
-              className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-              title="View"
-            >
-              <Eye className="w-4 h-4" />
-            </Link>
-
-            {canEditEvent(row as EventListItem) && (
+        render: (id: unknown, _: string, row: Record<string, unknown>) => {
+          const item = row as unknown as EventListItem;
+          return (
+            <div className="flex items-center justify-end gap-2">
               <Link
-                href={`/admin/events/${id}`}
+                href={`/events/${item.slug}`}
+                target="_blank"
                 className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                title="Edit"
+                title="View"
               >
-                <Edit className="w-4 h-4" />
+                <Eye className="w-4 h-4" />
               </Link>
-            )}
 
-            {canDeleteEvent(row as EventListItem) && (
-              <button
-                onClick={() => handleDelete(id as string, row.title)}
-                className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                title="Delete"
-              >
-                <Trash2 className="w-4 h-4" />
-              </button>
-            )}
-          </div>
-        ),
+              {canEditEvent(item) && (
+                <Link
+                  href={`/admin/events/${id}`}
+                  className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                  title="Edit"
+                >
+                  <Edit className="w-4 h-4" />
+                </Link>
+              )}
+
+              {canDeleteEvent(item) && (
+                <button
+                  onClick={() => handleDelete(id as string, item.title)}
+                  className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                  title="Delete"
+                >
+                  <Trash2 className="w-4 h-4" />
+                </button>
+              )}
+            </div>
+          );
+        },
       },
     ],
     pageLength: ITEMS_PER_PAGE,

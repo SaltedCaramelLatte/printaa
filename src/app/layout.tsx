@@ -1,26 +1,14 @@
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans, Poppins } from 'next/font/google';
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import { SITE_CONFIG } from '@/config/site.config';
 import { Toaster } from 'sonner';
 
-
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   variable: '--font-sans',
-  display: 'optional',
+  display: 'swap',
   fallback: ['system-ui', '-apple-system', 'sans-serif'],
-  preload: true,
-  adjustFontFallback: true,
-});
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['600', '700', '800'],
-  variable: '--font-heading',
-  display: 'optional',
-  fallback: ['system-ui', '-apple-system', 'sans-serif'],
-  preload: true,
   adjustFontFallback: true,
 });
 
@@ -88,7 +76,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
-      <body className={`${plusJakarta.variable} ${poppins.variable} font-sans antialiased`}>
+      <body className={`${plusJakarta.variable} font-sans antialiased text-gray-900 bg-white`}>
         {children}
         <Toaster position="top-right" richColors />
       </body>

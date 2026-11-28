@@ -11,6 +11,8 @@
  */
 export const ROUTES = {
   home: '/',
+  services: '/layanan',
+  calculator: '/kalkulator',
   about: '/about',
   articles: '/articles',
   events: '/events',

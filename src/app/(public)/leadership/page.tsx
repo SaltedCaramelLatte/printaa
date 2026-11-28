@@ -94,7 +94,7 @@ export default function LeadershipPage() {
             initial={{ opacity: 0, scale: 0.9, letterSpacing: '0em' }}
             animate={{ opacity: 1, scale: 1, letterSpacing: '-0.02em' }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="text-5xl sm:text-7xl md:text-9xl font-black uppercase tracking-tighter mb-6"
+            className="text-5xl sm:text-7xl md:text-9xl font-extrabold uppercase tracking-tight mb-6"
           >
             Leadership
           </motion.h1>
@@ -102,7 +102,7 @@ export default function LeadershipPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="text-lg md:text-2xl text-gray-400 max-w-2xl mx-auto font-light tracking-wide px-4"
+            className="text-lg md:text-2xl text-gray-400 max-w-2xl mx-auto font-normal tracking-wide px-4"
           >
             The visionaries behind the movement.
           </motion.p>
@@ -147,8 +147,8 @@ export default function LeadershipPage() {
 
                 {/* Typography - Minimal & Clean */}
                 <div className="border-t border-gray-800 pt-4 group-hover:border-primary-500 transition-colors duration-500">
-                  <h3 className="text-2xl font-bold mb-1 tracking-tight">{member.name}</h3>
-                  <p className="text-primary-500 text-sm font-mono tracking-widest uppercase opacity-80 group-hover:opacity-100 transition-opacity">
+                  <h3 className="text-xl sm:text-2xl font-semibold mb-1 tracking-tight">{member.name}</h3>
+                  <p className="text-primary-500 text-xs font-medium tracking-widest uppercase opacity-80 group-hover:opacity-100 transition-opacity">
                     {formatPosition(member.position)}
                   </p>
                 </div>
@@ -172,10 +172,10 @@ export default function LeadershipPage() {
             >
               {/* Division Header - Big Typography */}
               <div className="flex flex-col md:flex-row md:items-end justify-between border-b-4 border-black pb-6 mb-12">
-                <h2 className="text-3xl sm:text-5xl md:text-7xl font-black uppercase tracking-tighter text-black leading-none mb-4 md:mb-0">
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-black leading-none mb-4 md:mb-0">
                   {formatDivision(division)}
                 </h2>
-                <span className="text-2xl font-bold font-mono text-gray-300 mt-4 md:mt-0">
+                <span className="text-xl sm:text-2xl font-bold text-gray-400 mt-4 md:mt-0">
                   {String(members.length).padStart(2, '0')} MEMBERS
                 </span>
               </div>
@@ -212,10 +212,10 @@ export default function LeadershipPage() {
 
                     {/* Text Info */}
                     <div className="flex-1">
-                      <h4 className="text-xl font-bold text-gray-900 leading-tight group-hover:text-primary-600 transition-colors">
+                      <h4 className="text-lg sm:text-xl font-semibold text-gray-900 leading-tight group-hover:text-primary-600 transition-colors">
                         {member.name}
                       </h4>
-                      <p className="text-sm text-gray-500 font-mono mt-1 uppercase tracking-wide">
+                      <p className="text-xs text-gray-500 font-medium mt-1 uppercase tracking-wide">
                         {formatPosition(member.position)}
                       </p>
                     </div>

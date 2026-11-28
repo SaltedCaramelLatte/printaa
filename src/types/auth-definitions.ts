@@ -16,6 +16,6 @@ export interface Profile {
     updated_at: string;
     raw_app_meta_data?: {
         role?: UserRole;
-        [key: string]: any;
+        [key: string]: unknown;
     };
 }

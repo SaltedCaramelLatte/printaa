@@ -13,11 +13,10 @@ import { motion } from 'framer-motion';
 
 const navItems = [
   { label: 'Beranda', href: ROUTES.home },
-  { label: 'Tentang', href: ROUTES.about },
+  { label: 'Layanan & Harga', href: ROUTES.services },
+  { label: 'Kalkulator Cetak', href: ROUTES.calculator },
+  { label: 'Tentang Kami', href: ROUTES.about },
   { label: 'Artikel', href: ROUTES.articles },
-  { label: 'Event', href: ROUTES.events },
-  { label: 'Kepengurusan', href: ROUTES.leadership },
-  { label: 'Anggota', href: ROUTES.members },
 ];
 
 export function Navigation() {

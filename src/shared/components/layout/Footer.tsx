@@ -41,10 +41,10 @@ export function Footer() {
 
   const quickLinks = [
     { label: 'Beranda', href: ROUTES.home },
-    { label: 'Tentang', href: ROUTES.about },
-    { label: 'Artikel', href: ROUTES.articles },
-    { label: 'Event', href: ROUTES.events },
-    { label: 'Kepengurusan', href: ROUTES.leadership },
+    { label: 'Layanan & Harga', href: ROUTES.services },
+    { label: 'Kalkulator Cetak', href: ROUTES.calculator },
+    { label: 'Tentang Kami', href: ROUTES.about },
+    { label: 'Artikel & Panduan', href: ROUTES.articles },
   ];
 
   return (
@@ -58,8 +58,8 @@ export function Footer() {
             viewport={{ once: true }}
             className="md:col-span-5 pr-8"
           >
-            <h2 className="text-3xl font-black tracking-tight mb-6">{SITE_CONFIG.name}</h2>
-            <p className="text-gray-400 leading-relaxed mb-8 text-lg font-light">
+            <h2 className="text-3xl font-extrabold tracking-tight mb-6">{SITE_CONFIG.name}</h2>
+            <p className="text-gray-400 leading-relaxed mb-8 text-base font-normal">
               Dari tugas kuliah hingga kebutuhan bisnis, Print AA siap membantu dengan layanan cetak berkualitas, pengerjaan cepat, dan pelayanan yang bersahabat.
             Ikuti kami di media sosial untuk informasi layanan, promo, dan update terbaru.
             </p>
@@ -89,13 +89,13 @@ export function Footer() {
             transition={{ delay: 0.1 }}
             className="md:col-span-3"
           >
-            <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-8">Menu</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-8">Menu</h3>
             <ul className="space-y-4">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex items-center group text-gray-300 hover:text-white transition-colors"
+                    className="flex items-center group text-sm font-medium text-gray-300 hover:text-white transition-colors"
                   >
                     <span className="w-0 group-hover:w-2 h-[1px] bg-white mr-0 group-hover:mr-2 transition-all duration-300" />
                     {link.label}
@@ -113,20 +113,20 @@ export function Footer() {
             transition={{ delay: 0.2 }}
             className="md:col-span-4"
           >
-            <h3 className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-8">Hubungi Kami</h3>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-8">Hubungi Kami</h3>
             <ul className="space-y-6">
-              <li className="flex items-start gap-4 text-gray-400">
-                <MapPin className="w-5 h-5 mt-1 shrink-0" />
+              <li className="flex items-start gap-4 text-sm font-normal text-gray-400">
+                <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
                 <span className="leading-relaxed">{SITE_CONFIG.address}</span>
               </li>
               <li>
-                <a href={`tel:+${SITE_CONFIG.whatsappNumber}`} className="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                <a href={`tel:+${SITE_CONFIG.whatsappNumber}`} className="flex items-center gap-4 text-sm font-normal text-gray-400 hover:text-white transition-colors">
                   <Phone className="w-5 h-5 shrink-0" />
-                  <span>+{SITE_CONFIG.whatsappNumber}</span>
+                  <span className="font-semibold">+{SITE_CONFIG.whatsappNumber}</span>
                 </a>
               </li>
               <li>
-                <a href={`mailto:${SITE_CONFIG.email}`} className="flex items-center gap-4 text-gray-400 hover:text-white transition-colors">
+                <a href={`mailto:${SITE_CONFIG.email}`} className="flex items-center gap-4 text-sm font-normal text-gray-400 hover:text-white transition-colors">
                   <Mail className="w-5 h-5 shrink-0" />
                   <span>{SITE_CONFIG.email}</span>
                 </a>

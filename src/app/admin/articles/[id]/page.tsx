@@ -149,10 +149,14 @@ export default function ArticlePage() {
               label="Cover Image"
               value={formData.cover_image || ''}
               onChange={(url) => updateField('cover_image', url)}
-              onUpload={(file) => StorageService.uploadFile(file, 'articles').then(res => {
+              onUpload={async (file) => {
+                const res = await StorageService.uploadFile(file, 'articles');
                 if (res.error) throw res.error;
-                return res.url!;
-              })}
+                if (!res.url) {
+                  throw new Error('Gagal mendapatkan URL gambar setelah upload');
+                }
+                return res.url;
+              }}
               accept="image/*"
             />
           </div>

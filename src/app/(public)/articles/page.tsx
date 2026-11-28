@@ -42,10 +42,10 @@ export default async function ArticlesPage({
       <section className="relative bg-gray-900 text-white py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/50 to-gray-900" />
         <div className="container-custom relative z-10">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold mb-6 leading-tight tracking-tight">
             Artikel
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl leading-relaxed">
+          <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl leading-relaxed font-normal">
             Collection of articles, blog posts, opinions, publications, and latest information
           </p>
         </div>

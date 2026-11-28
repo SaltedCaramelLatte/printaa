@@ -83,7 +83,7 @@ function transformMember(raw: MemberRaw): Member {
     nim: raw.nim,
     email: raw.email,
     phone: raw.phone ?? undefined,
-    photo: isValidPhotoUrl(raw.photo) ? raw.photo! : undefined,
+    photo: isValidPhotoUrl(raw.photo) ? (raw.photo as string) : undefined,
     batch: raw.batch,
     status: raw.status,
     division: raw.division ?? undefined,

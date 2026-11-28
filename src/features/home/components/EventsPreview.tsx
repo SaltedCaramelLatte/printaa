@@ -43,15 +43,15 @@ export function EventsPreview() {
       <div className="container-custom relative z-10">
         {/* Header - Large bold text */}
         <div className="max-w-4xl mb-16">
-          <h2 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">
             Event <br />
             <span className="text-primary-600">Mendatang</span>
           </h2>
           <div className="flex items-center justify-between">
-            <p className="text-xl text-gray-600">Don't miss our exciting upcoming events</p>
+            <p className="text-lg sm:text-xl text-gray-600 font-normal">Don't miss our exciting upcoming events</p>
             <Link
               href="/events"
-              className="hidden md:inline-flex items-center gap-2 text-gray-900 font-semibold hover:gap-3 transition-all"
+              className="hidden md:inline-flex items-center gap-2 text-gray-900 font-semibold hover:gap-3 transition-all text-sm"
             >
               Lihat Semua
               <ArrowRight className="w-5 h-5" />
@@ -104,19 +104,19 @@ export function EventsPreview() {
                     </div>
 
                     {/* Title - large and bold */}
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4 line-clamp-2 group-hover:text-primary-600 transition-colors">
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4 line-clamp-2 group-hover:text-primary-600 transition-colors">
                       {event.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-600 mb-6 line-clamp-2 text-lg leading-relaxed">
+                    <p className="text-gray-600 mb-6 line-clamp-2 text-base sm:text-lg leading-relaxed font-normal">
                       {event.description}
                     </p>
 
                     {/* Location */}
-                    <div className="flex items-center gap-2 text-gray-700">
+                    <div className="flex items-center gap-2 text-gray-700 text-sm font-medium">
                       <MapPin className="w-5 h-5 text-primary-600" />
-                      <span className="font-medium line-clamp-1">{event.location.name}</span>
+                      <span className="line-clamp-1">{event.location.name}</span>
                     </div>
                   </div>
                 </div>

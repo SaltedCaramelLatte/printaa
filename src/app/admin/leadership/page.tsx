@@ -105,27 +105,30 @@ export default function LeadershipPage() {
         title: 'Name',
         sortable: true,
         responsivePriority: 1,
-        render: (_: unknown, __: string, row: any) => (
-          <div className="flex items-center gap-3">
-            {row.photo ? (
-              <img
-                src={row.photo}
-                alt={row.name}
-                className="w-10 h-10 rounded-full object-cover"
-              />
-            ) : (
-              <div className="w-10 h-10 rounded-full bg-green-100 text-green-800 flex items-center justify-center font-semibold text-sm">
-                {row.name.charAt(0)}
-              </div>
-            )}
-            <div>
-              <div className="font-medium text-gray-900">{row.name}</div>
-              {row.email && (
-                <div className="text-sm text-gray-500">{row.email}</div>
+        render: (_: unknown, __: string, row: Record<string, unknown>) => {
+          const item = row as unknown as Leadership;
+          return (
+            <div className="flex items-center gap-3">
+              {item.photo ? (
+                <img
+                  src={item.photo}
+                  alt={item.name}
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+              ) : (
+                <div className="w-10 h-10 rounded-full bg-green-100 text-green-800 flex items-center justify-center font-semibold text-sm">
+                  {item.name.charAt(0)}
+                </div>
               )}
+              <div>
+                <div className="font-medium text-gray-900">{item.name}</div>
+                {item.email && (
+                  <div className="text-sm text-gray-500">{item.email}</div>
+                )}
+              </div>
             </div>
-          </div>
-        ),
+          );
+        },
       },
       {
         data: 'position',
@@ -143,36 +146,42 @@ export default function LeadershipPage() {
         data: 'period_start', // Using period_start as key
         title: 'Period',
         sortable: true,
-        render: (_: unknown, __: string, row: any) => (
-          <div className="flex items-center gap-1 text-sm text-gray-700">
-            <Calendar className="w-4 h-4" />
-            {new Date(row.period_start).getFullYear()} - {new Date(row.period_end).getFullYear()}
-          </div>
-        ),
+        render: (_: unknown, __: string, row: Record<string, unknown>) => {
+          const item = row as unknown as Leadership;
+          return (
+            <div className="flex items-center gap-1 text-sm text-gray-700">
+              <Calendar className="w-4 h-4" />
+              {new Date(item.period_start).getFullYear()} - {new Date(item.period_end).getFullYear()}
+            </div>
+          );
+        },
       },
       {
         data: 'id',
         title: 'Actions',
         sortable: false,
         className: 'text-right',
-        render: (id: unknown, _: string, row: any) => (
-          <div className="flex items-center justify-end gap-2">
-            <Link
-              href={`/admin/leadership/${id}`}
-              className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-              title="Edit"
-            >
-              <Edit className="w-4 h-4" />
-            </Link>
-            <button
-              onClick={() => handleDelete(id as string, row.name)}
-              className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-              title="Delete"
-            >
-              <Trash2 className="w-4 h-4" />
-            </button>
-          </div>
-        ),
+        render: (id: unknown, _: string, row: Record<string, unknown>) => {
+          const item = row as unknown as Leadership;
+          return (
+            <div className="flex items-center justify-end gap-2">
+              <Link
+                href={`/admin/leadership/${id}`}
+                className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                title="Edit"
+              >
+                <Edit className="w-4 h-4" />
+              </Link>
+              <button
+                onClick={() => handleDelete(id as string, item.name)}
+                className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                title="Delete"
+              >
+                <Trash2 className="w-4 h-4" />
+              </button>
+            </div>
+          );
+        },
       },
     ],
     pageLength: ITEMS_PER_PAGE,
